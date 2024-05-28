@@ -2,11 +2,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 //1. Import componenets via folders
-import Header from "./Header";
-import App from "./App";
-import Forecast from "./Forecast";
-import Footer from "./Footer";
 import "./styles.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -15,10 +13,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <Header />
-    <App />
-    <Forecast />
-    <Footer />
-  </StrictMode>
+  </StrictMode>,
 );
 
 //CONNECTING COMPONENETS

@@ -21,6 +21,7 @@ export default function Header() {
           <input type="submit" value="search" id="input" />
         </form>
       </div>
+      <Forecast />
       <Footer />
     </div>
   );
