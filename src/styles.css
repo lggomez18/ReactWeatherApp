@@ -43,6 +43,12 @@ input {
   justify-content: center;
 }
 
+.icon {
+  font-size: 50px;
+  margin: 0 0;
+  padding: none;
+}
+
 .row {
   display: flex;
   width: 100%;
