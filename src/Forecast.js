@@ -11,13 +11,13 @@ export default function Forecast() {
         <div className="row">
           <div className="column">
             <h2 id="date">
-              <small>Hora:</small>
+              <small>Time:</small>
             </h2>
             <br />
             2:45 PM
             <br />
             <h2 id="date">
-              <small>Fecha:</small>
+              <small>Date:</small>
             </h2>
             <br />
             01/01/2001
