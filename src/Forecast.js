@@ -7,20 +7,26 @@ export default function Forecast() {
         Guadalajara,<small>MX</small>
       </h1>
 
-      <div className="container">
+      <div className="containerF">
         <div className="row">
-          <div className="col">
+          <div className="column">
             Hora:
             <br />
             2:45 PM
             <br />
-            Fecha:
+            <h2 id="date">
+              <small>Fecha</small>
+            </h2>
             <br />
             01/01/2001
           </div>
 
-          <div className="col">
-            <h1>Today</h1>
+          <div className="column">
+            <strong>Today</strong>
+            <br />
+            Humidity: 80%
+            <br />
+            Wind Speed: 12 km/hr
           </div>
         </div>
       </div>
