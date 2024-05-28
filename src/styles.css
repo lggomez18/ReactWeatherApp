@@ -1,11 +1,15 @@
 * {
   margin: 5px auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace;
   box-sizing: border-box;
 }
 
 body {
-  background: #38598b;
+  background: linear-gradient(
+    89deg,
+    rgb(253, 220, 155) 26.2%,
+    rgb(255, 215, 165) 48.5%
+  );
 }
 
 button {
@@ -25,11 +29,28 @@ input {
 .container {
   width: 90%;
   max-width: 470px;
-  background: #e3e3e3;
-  color: #113f67;
+  background: whitesmoke;
+  color: #f8b400;
   margin: 100px auto o;
   border-radius: 20px;
   padding: 40px 35px;
+  text-align: center;
+}
+
+.containerF {
+  color: #455d7a;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.column {
+  flex: 1; /* Each column takes equal space */
+  padding: 20px;
   text-align: center;
 }
 
@@ -75,6 +96,7 @@ input {
 .weather h1 {
   font-size: 50px;
   font-weight: 500;
+  color: #e8751a;
 }
 
 .temperature-value p {
