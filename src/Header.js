@@ -2,6 +2,7 @@
 //1. Import react. REMEMBER to type the word React with capital letter on the first one, and all lowercase on the second-react.
 import React from "react";
 import Footer from "./Footer";
+import Forecast from "./Forecast";
 
 //2. Export the function
 export default function Header() {

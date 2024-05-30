@@ -13,6 +13,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <Header />
+    <Weather />
   </StrictMode>,
 );
 
