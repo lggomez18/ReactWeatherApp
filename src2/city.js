@@ -4,7 +4,7 @@ export default function City(props) {
   function Fahrenheit(event) {
     event.preventDefault();
 
-    let fahrenheitTemperature = (Math.round(props.temperature * (9 / 5) + 32);
+    let fahrenheitTemperature = Math.round(props.temperature * (9 / 5) + 32);
     alert(fahrenheitTemperature);
   }
 
