@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import "./App.css";
+import Weather from "./Weather";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -21,6 +22,8 @@ root.render(
       <p>
         When the button is clicked, alert "Coming soon..." Add the button here.
       </p>
+
+      <Weather />
 
       <h3>Challenge 3</h3>
       <p>
