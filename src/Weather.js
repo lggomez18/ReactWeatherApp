@@ -7,8 +7,12 @@ function Weather(props) {
 
   return (
     <div>
-      The temperature in {props.city} is {props.temperature}°C and {""}
-      {Math.round(props.temperature * (9 / 5) + 32)}°F
+      The temperature in {props.city} is {props.temperature}°C |{" "}
+      <a href="/">
+        {" "}
+        {""}
+        {Math.round(props.temperature * (9 / 5) + 32)}°F{" "}
+      </a>
     </div>
   );
 }
