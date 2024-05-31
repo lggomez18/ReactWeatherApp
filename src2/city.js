@@ -3,7 +3,9 @@ import React from "react";
 export default function City(props) {
   function Fahrenheit(event) {
     event.preventDefault();
-    alert(props.temperature);
+
+    let fahrenheitTemperature = (Math.round(props.temperature * (9 / 5) + 32);
+    alert(fahrenheitTemperature);
   }
 
   return (
