@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 
 import "./App.css";
 import Weather from "./Weather";
+import Forecast from "./ForecastEvent";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -31,6 +32,8 @@ root.render(
         forecast". When clicking on it, alert "Forecast feature is not ready
         yet". Include the component here.
       </p>
+
+      <Forecast />
     </div>
   </StrictMode>,
 );
