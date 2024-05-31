@@ -11,9 +11,19 @@ export default function City(props) {
     //alert(`${fahrenheitTemperature}°F`);
   }
 
+  function Celsius(event) {
+    event.preventDefault();
+    setTemperature(props.temperature);
+    //setTemperature (props.temperature) will return Fahrenheit conversion to the original value as determined on index.js Hense, props.temeprature in parenthesis.
+  }
+
   return (
     <div class="City">
-      It is {temperature}°C |{" "}
+      It is {temperature}
+      <a href="/" onClick={Celsius}>
+        °C{" "}
+      </a>
+      |{" "}
       <a href="/" onClick={Fahrenheit}>
         °F{" "}
       </a>{" "}
