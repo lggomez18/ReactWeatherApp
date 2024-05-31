@@ -5,6 +5,7 @@ export default function City(props) {
     <div class="City">
       It is {props.temperature}°C |{" "}
       <a href="/" onClick={showFarenheit}>
+        {" "}
         °F{" "}
       </a>{" "}
       in {props.name}
