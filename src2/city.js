@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function City(props) {
+
+  const [temperature, setTemperature] = useState {props.temperature};
+
   function Fahrenheit(event) {
     event.preventDefault();
 
