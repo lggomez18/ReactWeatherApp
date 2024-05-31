@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 
 export default function City(props) {
+  //create variables to develop functions
   const [temperature, setTemperature] = useState(props.temperature);
+  const [unit, setUnit] = useState("Celsius");
 
   function Fahrenheit(event) {
     event.preventDefault();
 
     let fahrenheitTemperature = Math.round(props.temperature * (9 / 5) + 32);
+    setUnit("Imperial");
     setTemperature(fahrenheitTemperature);
     //alert(`${fahrenheitTemperature}°F`);
   }
@@ -19,7 +22,7 @@ export default function City(props) {
 
   return (
     <div class="City">
-      It is {temperature}
+      It is {temperature} ({unit})
       <a href="/" onClick={Celsius}>
         °C{" "}
       </a>
