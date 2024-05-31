@@ -11,3 +11,5 @@ export default function Forecast() {
     </a>
   );
 }
+
+//The instructor used # instead of /
