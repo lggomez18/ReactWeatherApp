@@ -8,14 +8,16 @@ export default function Search() {
     alert("Searching...");
   }
 
-  function updateQuery(event) {}
+  function updateQuery(event) {
+    setQuery(event.target.value);
+  }
 
   return (
     <form onSubmit={handleSearch}>
       <strong>The query is:{query} </strong>
       <br />
       <input type="search" onChange={updateQuery} />
-      <input type="button" value="search" />
+      <input type="submit" value="search" />
     </form>
   );
 }
