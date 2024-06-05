@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import "./App.css";
-import "./searchEngine";
+import searchEngine from "./searchEngine";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -19,14 +19,20 @@ root.render(
           Include it here.
         </p>
 
+        <searchEngine />
+
         <h3>Challenge 2</h3>
         <p>When the form is submitted, alert "Searching.." Include it here.</p>
+
+        <searchEngine />
 
         <h3>Challenge 3</h3>
         <p>
           When the form is submitted with New York in the search input for
           example, alert "New York" Include it here.
         </p>
+
+        <searchEngine />
       </div>
     </div>
   </StrictMode>,
