@@ -8,12 +8,14 @@ export default function SearchEngine() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    alert(`Searching for ${city}`);
+    alert(`It is 19 Celsius in ${city}`);
   }
 
   //Created the function updateCity and created an event listener, to give info everytime is clicked.
 
-  function updateCity(event) {}
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
   return (
     <form onSubmit={handleSubmit}>
       <input type="search" onChange={updateCity}></input>
