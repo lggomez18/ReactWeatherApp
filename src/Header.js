@@ -3,6 +3,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Forecast from "./Forecast";
+import Weather from "./Weather";
 
 //2. Export the function
 export default function Header() {
@@ -22,6 +23,7 @@ export default function Header() {
           <input type="submit" value="search" id="input" />
         </form>
       </div>
+      <Weather />
       <Forecast />
       <Footer />
     </div>
