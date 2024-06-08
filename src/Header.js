@@ -23,7 +23,11 @@ export default function Header() {
           <input type="submit" value="search" id="input" />
         </form>
       </div>
-      <Weather />
+      <br />
+      <Weather city="Paris" temperature={19} />
+      <Weather city="New York" temperature={22} />
+      <br />
+
       <Forecast />
       <Footer />
     </div>
