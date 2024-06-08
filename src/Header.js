@@ -4,6 +4,7 @@ import React from "react";
 import Footer from "./Footer";
 import Forecast from "./Forecast";
 import Weather from "./Weather";
+import SearchEngine from "./SearchEngine";
 
 //2. Export the function
 export default function Header() {
@@ -24,10 +25,10 @@ export default function Header() {
         </form>
       </div>
       <br />
+      <SearchEngine />
       <Weather city="Paris" temperature={19} />
       <Weather city="New York" temperature={22} />
       <br />
-
       <Forecast />
       <Footer />
     </div>
