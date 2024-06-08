@@ -18,3 +18,4 @@ root.render(
 //CONNECTING COMPONENETS
 //1. Import componenets via folders
 //2. Write <componenet name /> inside <StrictMode>  </StrictMode>
+//3. In this case it is not necessary to import components forecast and footer, because those are inside the component file called header.
