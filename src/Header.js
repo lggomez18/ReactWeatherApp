@@ -14,10 +14,7 @@ export default function Header() {
       <Search />
       <br />
 
-      <Weather city="Paris" temperature={19} />
-      <Weather city="New York" temperature={22} />
       <br />
-      <City />
       <Forecast />
       <Footer />
     </div>

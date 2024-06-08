@@ -1,4 +1,6 @@
 import React from "react";
+import City from "./city";
+import Weather from "./Weather";
 
 export default function Forecast() {
   return (
@@ -6,6 +8,8 @@ export default function Forecast() {
       <h1>
         Guadalajara,<small>MX</small>
       </h1>
+
+      <City />
 
       <div className="containerF">
         <div className="row">
@@ -43,6 +47,10 @@ export default function Forecast() {
           </div>
         </div>
       </div>
+      <h3>Other forecast </h3>
+      <Weather city="Paris" temperature={19} />
+      <Weather city="New York" temperature={22} />
+      <br />
     </div>
   );
 }

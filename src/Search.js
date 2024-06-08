@@ -17,7 +17,7 @@ export default function SearchEngine() {
     setCity(event.target.value);
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} class="search">
       <input type="search" onChange={updateCity}></input>
       <input type="submit" value="search"></input>
     </form>
