@@ -4,6 +4,7 @@ import React from "react";
 import Footer from "./Footer";
 import Forecast from "./Forecast";
 import Weather from "./Weather";
+import City from "./city";
 
 //2. Export the function
 export default function Header() {
@@ -27,6 +28,7 @@ export default function Header() {
       <Weather city="Paris" temperature={19} />
       <Weather city="New York" temperature={22} />
       <br />
+      <City />
       <Forecast />
       <Footer />
     </div>
