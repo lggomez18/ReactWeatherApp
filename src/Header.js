@@ -11,22 +11,9 @@ import Footer from "./Footer";
 export default function Header() {
   return (
     <div class="container">
-      <div class="search">
-        <form id="searchForm">
-          <input
-            type="search"
-            placeholder="Search city"
-            class="form-control"
-            autocomplete="off"
-            autofocus="on"
-            id="city-input"
-          />
-
-          <input type="submit" value="search" id="input" />
-        </form>
-      </div>
-      <br />
       <Search />
+      <br />
+
       <Weather city="Paris" temperature={19} />
       <Weather city="New York" temperature={22} />
       <br />
