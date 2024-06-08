@@ -4,7 +4,6 @@ import { createRoot } from "react-dom/client";
 //1. Import componenets via folders
 import "./styles.css";
 import Header from "./Header";
-import Footer from "./Footer";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -13,7 +12,6 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <Header />
-    <Weather />
   </StrictMode>,
 );
 
