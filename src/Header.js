@@ -11,7 +11,7 @@ import Footer from "./Footer";
 export default function Header() {
   return (
     <div class="container">
-      <Search />
+      <Search defaultCity={"Guadalajara"} />
       <br />
 
       <br />

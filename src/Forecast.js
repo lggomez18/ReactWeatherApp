@@ -2,11 +2,11 @@ import React from "react";
 import City from "./city";
 import Weather from "./Weather";
 
-export default function Forecast() {
+export default function Forecast(props) {
   return (
     <div className="Forecast">
       <h1>
-        Guadalajara,<small>MX</small>
+        {props.city},<small>MX</small>
       </h1>
 
       <City />
