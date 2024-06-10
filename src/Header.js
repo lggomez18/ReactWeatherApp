@@ -8,7 +8,7 @@ import Footer from "./Footer";
 export default function Header() {
   return (
     <div class="container">
-      <Search defaultCity={"Guadalajara"} />
+      <Search />
       <br />
 
       <br />
