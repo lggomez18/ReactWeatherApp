@@ -1,11 +1,14 @@
 import React from "react";
 import City from "./city";
 import Weather from "./Weather";
+import Search from "./Search";
 
 export default function Forecast(props) {
   return (
     <div className="Forecast">
       <h1>{props.city}</h1>
+      <Search />
+      <h2>{message}</h2>
 
       <div className="containerF">
         <div className="row">

@@ -4,12 +4,13 @@ import Forecast from "./Forecast";
 //1. In the past we used queary selector to refer to parts of the page to communicate.
 //2. React uses "use state", same function as documen.quearyselector
 
-export default function SearchEngine(props) {
-  let [city, setCity] = useState(props.defaultCity);
+export default function SearchEngine() {
+  let [city, setCity] = useState("");
+  let [message, setMessage] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    alert(`It is 19 Celsius in ${city}`);
+    setMessage(`It is currently 20°C in ${city}`);
   }
 
   //Created the function updateCity and created an event listener, to give info everytime is clicked.
