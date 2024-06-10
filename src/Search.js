@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import Forecast from "./Forecast";
 
 //1. In the past we used queary selector to refer to parts of the page to communicate.
 //2. React uses "use state", same function as documen.quearyselector
 
-export default function SearchEngine() {
-  let [city, setCity] = useState("");
+export default function SearchEngine(props) {
+  let [city, setCity] = useState(props.defaultCity);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -17,9 +18,12 @@ export default function SearchEngine() {
     setCity(event.target.value);
   }
   return (
-    <form onSubmit={handleSubmit} class="search">
-      <input type="search" onChange={updateCity}></input>
-      <input type="submit" value="search"></input>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit} class="search">
+        <input type="search" onChange={updateCity}></input>
+        <input type="submit" value="search"></input>
+      </form>
+      <Forecast city={city} />
+    </div>
   );
 }

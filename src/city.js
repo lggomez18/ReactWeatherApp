@@ -22,7 +22,7 @@ export default function City(props) {
 
   return (
     <div class="City">
-      It is {temperature} ({unit})
+      It is {props.temperature} ({unit})
       <a href="/" onClick={Celsius}>
         °C{" "}
       </a>

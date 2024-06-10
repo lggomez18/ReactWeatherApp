@@ -5,11 +5,7 @@ import Weather from "./Weather";
 export default function Forecast(props) {
   return (
     <div className="Forecast">
-      <h1>
-        {props.city},<small>MX</small>
-      </h1>
-
-      <City />
+      <h1>{props.city}</h1>
 
       <div className="containerF">
         <div className="row">
